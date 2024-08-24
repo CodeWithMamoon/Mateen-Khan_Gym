@@ -9,7 +9,7 @@ const WorkoutSessions = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
           quisquam. Eaque alias, blanditiis quidem maiores illo unde ipsam!
         </p>
-        <img src="/img5.jpg" alt="workout" />
+        <img src="/img5.jpeg" alt="workout" />
       </div>
       <div className="wrapper">
         <h1>FEATURED BOOTCAMPS</h1>
