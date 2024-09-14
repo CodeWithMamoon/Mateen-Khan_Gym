@@ -5,27 +5,35 @@ import { Link } from "react-router-dom";
 const Pricing = () => {
   const pricing = [
     {
-      imgUrl: "/img1.jpeg",
+      imgUrl: "/pic3.jpeg",
       title: "QUARTERLY",
-      price: 18000,
+      price: 12000,
       length: 3,
     },
     {
-      imgUrl: "/img1.jpeg",
-      title: "HEAL_YEARLY",
-      price: 34000,
+      imgUrl: "/pic3.jpeg",
+      title: "HALF-YEARLY",
+      price: 22000,
       length: 6,
     },
     {
-      imgUrl: "/img1.jpeg",
+      imgUrl: "/pic3.jpeg",
       title: "YEARLY",
-      price: 67000,
+      price: 42000,
       length: 12,
     },
   ];
+
   return (
-    <section className="pricing">
-      <h1>ELITE EDGE FITNESS PLANS</h1>
+    <section id="pricing" className="pricing">
+      <h1>Affordable Fitness Plans for All</h1>
+      <p>
+        At Mateen Khan Gym, we provide affordable fitness plans for middle-class 
+        families who want to stay fit without breaking the bank. We offer both 
+        onsite and online training, allowing you to choose the option that works 
+        best for you. Our online sessions are perfect for those who prefer working 
+        out from home.
+      </p>
       <div className="wrapper">
         {pricing.map((element) => {
           return (
@@ -39,19 +47,19 @@ const Pricing = () => {
               </div>
               <div className="description">
                 <p>
-                  <Check /> Equipment
+                  <Check /> Online and Onsite Training
                 </p>
                 <p>
-                  <Check /> All Day Fre Training
+                  <Check /> Flexible Workout Schedules
                 </p>
                 <p>
-                  <Check /> Free Restroom
+                  <Check /> Professional Trainer Support
                 </p>
                 <p>
-                  <Check /> 24/7 Skilled Support
+                  <Check /> Customized Diet and Workout Plans
                 </p>
                 <p>
-                  <Check /> 20 Days Freezing Option
+                  <Check /> 10-Day Plan Freezing Option
                 </p>
                 <Link to={"/"}>Join Now</Link>
               </div>

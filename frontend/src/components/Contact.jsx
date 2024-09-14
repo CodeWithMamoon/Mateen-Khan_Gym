@@ -14,7 +14,7 @@ const Contact = () => {
     setLoading(true);
     try {
       const { data } = await axios.post(
-        "https://mateen-khan-gym-8c7p.vercel.app/send/mail",
+        "http://localhost:3000/send/mail",
         {
           name,
           email,
@@ -39,7 +39,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact">
+    <section  id="contact" className="contact">
       <form onSubmit={sendMail}>
         <h1>CONTACT US</h1>
         <div>

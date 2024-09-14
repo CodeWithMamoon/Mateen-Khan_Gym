@@ -8,7 +8,7 @@
   font-family: "Roboto", sans-serif;
 }
 
-header {
+/* header {
   position: absolute;
   top: 0;
   left: 0;
@@ -24,12 +24,51 @@ header p {
   letter-spacing: 1px;
   word-spacing: 5px;
   color: whitesmoke;
+} */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px;
+  background-color: #333; /* Dark background for contrast */
+}
+
+header p {
+  font-family: "Exo 2", sans-serif;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  color: whitesmoke;
+  font-size: 1.6rem;
+}
+
+.whatsapp-icon {
+  display: flex;
+  align-items: center;
+  color: #25D366; 
+  border: 2px solid whitesmoke;
+  padding: 8px 12px;
+  border-radius: 50%; 
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.whatsapp-icon:hover {
+  background-color: #25D366; /* Change background on hover */
+  color: whitesmoke; /* Change icon color on hover */
+}
+
+.whatsapp-icon svg {
+  vertical-align: middle; /* Center icon vertically */
 }
 
 .hero {
   min-height: 100vh;
   position: relative;
-  background: url(/img3.jpeg) rgba(0, 0, 0, 0.75);
+  background: url(/pic1.jpeg) rgba(0, 0, 0, 0.75);
   background-blend-mode: darken;
   background-size: cover;
   background-repeat: no-repeat;
@@ -68,6 +107,10 @@ header p {
   border: 1px solid #0095ff;
   background: transparent;
   transition: 0.3s;
+}
+.hero .content .buttons button a {
+  text-decoration: none; 
+  color: inherit; 
 }
 .hero .content .buttons button:hover {
   cursor: pointer;
@@ -455,7 +498,7 @@ header p {
 
 .contact {
   min-height: 800px;
-  background: url(/contact.jpg) rgba(0, 0, 0, 0.75);
+  background: url(/pic4.jpeg) rgba(0, 0, 0, 0.75);
   background-blend-mode: darken;
   background-repeat: no-repeat;
   background-size: cover;
@@ -519,7 +562,10 @@ footer {
   font-size: 20px;
   color: #0095ff;
 }
-
+footer a{
+  text-decoration: none;
+  color: #0095ff;
+}
 .bmi {
   display: flex;
   flex-direction: column;

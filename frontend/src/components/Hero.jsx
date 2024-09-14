@@ -14,8 +14,10 @@ const Hero = () => {
           <p>Unleash Your Potential</p>
         </div>
         <div className="buttons">
-          <button>Start Your Journey</button>
-          <button>Discover Your Plan</button>
+          <button><a href="#contact" className="btn">
+            Start Your Journey
+          </a></button>
+          <button> <a href="#pricing">Discover Your Plan</a></button>
         </div>
       </div>
     </section>
